@@ -3,7 +3,7 @@
 ########################################################################
 # Extension Manager/Repository config file for ext "vjrtecodesnippets".
 #
-# Auto generated 02-09-2015 11:02
+# Auto generated 07-08-2015 23:51
 #
 # Manual updates:
 # Only the data in the array - everything else is removed by next
@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'description' => 'This extension adds the code-tag to rte and provides a user function for highlighting the content. Please read the mamual (geshilib or jph_codesnippets is required).',
 	'category' => 'fe',
 	'shy' => 0,
-	'version' => '0.0.3',
+	'version' => '0.0.4',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
