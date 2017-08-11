@@ -12,6 +12,9 @@ includeLibs.vjrtecodesnippets = EXT:vjrtecodesnippets/class.user_vjrtecodesnippe
 lib.parseFunc_RTE.tags.code = TEXT
 lib.parseFunc_RTE.tags.code.current = 1
 
+# default charset is UTF-8 
+plugin.tx_vjrtecodesnippets.charset = UTF-8
+
 # the following configuration is taken from tx_jphcodesnippets_pi to be independent optionally
 lib.parseFunc_RTE.tags.code.postUserFunc {
 
