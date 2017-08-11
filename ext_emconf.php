@@ -3,7 +3,7 @@
 ########################################################################
 # Extension Manager/Repository config file for ext "vjrtecodesnippets".
 #
-# Auto generated 03-09-2015 23:00
+# Auto generated 01-09-2015 19:52
 #
 # Manual updates:
 # Only the data in the array - everything else is removed by next
@@ -12,10 +12,10 @@
 
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'GeSHi code snippets (syntax highlighting) for RTE',
-	'description' => 'This extension adds <code> to rte and provides a user function for highlighting the content. Please read the mamual (geshilib or jph_codesnippets is required).',
+	'description' => 'This extension adds the code-tag to rte and provides a user function for highlighting the content. Please read the mamual (geshilib or jph_codesnippets is required).',
 	'category' => 'fe',
 	'shy' => 0,
-	'version' => '0.0.1',
+	'version' => '0.0.2',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
@@ -23,7 +23,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'TYPO3_version' => '',
 	'PHP_version' => '',
 	'module' => '',
-	'state' => 'alpha',
+	'state' => 'beta',
 	'uploadfolder' => 0,
 	'createDirs' => '',
 	'modify_tables' => '',

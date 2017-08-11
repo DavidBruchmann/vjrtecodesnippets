@@ -14,6 +14,8 @@ lib.parseFunc_RTE.tags.code.current = 1
 
 # the following configuration is taken from tx_jphcodesnippets_pi to be independent optionally
 lib.parseFunc_RTE.tags.code.postUserFunc {
+
+	# div or pre
 	headerType = div
 	enableClasses = 1
 	overallClass =
@@ -70,6 +72,9 @@ lib.parseFunc_RTE.tags.code.postUserFunc {
 	
 	# if enabled <br /> will be converted to \n before parsing with geshi
 	convertBR2LBR = 1
+	
+	# removes html entities before transferring content to geshi
+	htmlentitydecode = 1
 
 	# the amount of spaces (&nbsp;) that must occur to be converted to one tab (chr(9))
 	# e.g. if convertSpace2Tab = 3 then &nbsp; followed three times will be converted to one tab

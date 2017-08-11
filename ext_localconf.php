@@ -10,7 +10,6 @@ require_once(t3lib_extMgm::extPath('vjrtecodesnippets').'class.user_vjrtecodesni
 		RTE.default {
 		
 			proc {
-				overruleMode = tx_vjrtecodesnippets,ts_css,cleanenc
 				allowTags := addToList(code)
 				allowTagsOutside := addToList(code)
 		
@@ -39,6 +38,8 @@ require_once(t3lib_extMgm::extPath('vjrtecodesnippets').'class.user_vjrtecodesni
 				content = <code language="php" extralines="" startline="1" url="" downloadtitle="">|</code>
 			}
 		}
+		
+		RTE.default.FE < RTE.default
 	');
 
 ?>

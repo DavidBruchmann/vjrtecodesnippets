@@ -78,6 +78,12 @@ class user_vjrtecodesnippets {
 			return '';
 		
 
+			// remove htmlentities
+		$removeHtmlEntities = $parameters['htmlentitydecode'] ? $parameters['htmlentitydecode'] : $this->conf['htmlentitydecode'];			
+		if($removeHtmlEntities) {
+			$content = html_entity_decode($content);
+		}
+
 			// default language is php
 		$language = $parameters['language'] ? $parameters['language'] : 'php';
 
@@ -106,7 +112,7 @@ class user_vjrtecodesnippets {
 			// configuration by typoscript (done originally by flexform conf in tx_jphcodesnippets_pi)
 			
 			// headerstyle is pre by default
-		$header_type = $this->conf['headerDiv'] ? $geshi->set_header_type(GESHI_HEADER_DIV) : $geshi->set_header_type(GESHI_HEADER_PRE);
+		$header_type = $this->conf['headerType'] == 'div' ? $geshi->set_header_type(GESHI_HEADER_DIV) : $geshi->set_header_type(GESHI_HEADER_PRE);
 
 
 		if (preg_match('/1|true|TRUE/', $this->conf['enableClasses']))
